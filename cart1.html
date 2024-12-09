@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Ecommerce Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo">nike</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">products</a>
+        <a href="index.html">featured</a>
+        <a href="index.html">review</a>
+    </nav>
+
+    <div class="icons">
+        <a href="https://www.paypal.com/webapps/shoppingcart?mfid=1662790988459_0b400630519a7&flowlogging_id=0b400630519a7#/checkout/shoppingCart="" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<br><br><br><br><br><br><br>
+<img src = "images/paypal.png" class="centerimage"></img>
+<p class="centerfont">Terms & Conditions:</p>
+<p class="centerfont">* Buyer Protection is available on eligible purchases only. 180 day time limit and other terms apply.</p>
+<p class="centerfont">** Subject to issuer’s reward programme terms and conditions.</p>
+<p class="centerfont">*** Activation required. Up to USD$15 per return and upto 12 returns each year (1 per month).</p>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" align="center">
+
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="kin@kinskards.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Nike Shoes">
+  <input type="hidden" name="amount" value="120.99">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+
+</body>
+</html>
